@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-apresentação", "1-apresentação", "{985DA6E9-9EFC-4CD2-AEA2-4720055AB1C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Serviço", "2-Serviço", "{5A4EDF03-7791-4CB5-9E83-DA96F7498A5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Aplicação", "3-Aplicação", "{BA0255B0-BBF2-4044-AD37-05941035EC08}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Dominio", "4-Dominio", "{AFBA86E0-1ADC-4AB8-8F14-79EEBD8568AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5-Infra", "5-Infra", "{6CBA2245-E4D4-45DA-9766-837C920ABFF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.1-Dados", "5.1-Dados", "{530AAE4F-D668-4F73-856C-FC49842FF1E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2-Transversal", "5.2-Transversal", "{A725AE9A-54F6-44F0-AFE8-41FEDA93F70F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "appCRUD.Dominio", "src\appCRUD.Dominio\appCRUD.Dominio.csproj", "{60E6F6FD-1E72-4F6F-9238-28CCB52064C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60E6F6FD-1E72-4F6F-9238-28CCB52064C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60E6F6FD-1E72-4F6F-9238-28CCB52064C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60E6F6FD-1E72-4F6F-9238-28CCB52064C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60E6F6FD-1E72-4F6F-9238-28CCB52064C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{530AAE4F-D668-4F73-856C-FC49842FF1E6} = {6CBA2245-E4D4-45DA-9766-837C920ABFF2}
+		{A725AE9A-54F6-44F0-AFE8-41FEDA93F70F} = {6CBA2245-E4D4-45DA-9766-837C920ABFF2}
+		{60E6F6FD-1E72-4F6F-9238-28CCB52064C6} = {AFBA86E0-1ADC-4AB8-8F14-79EEBD8568AF}
+	EndGlobalSection
+EndGlobal
