@@ -6,18 +6,23 @@ using System.Threading.Tasks;
 
 namespace appCRUD.Dominio.Modelos
 {
-    class Usuario
+    public class Usuario
     {
         public Usuario()
         {
-            Id = new Guid();
+            UsuarioId = new Guid();
+            Enderecos = new List<Endereco>();
         }
 
-        public Guid Id { get; set; }
+        public Guid UsuarioId { get; set; }
         public string Nome { get; set; }
         public string Sobrenome { get; set; }
+        public string CPF { get; set; }
         public string Email { get; set; }
+        public DateTime DataNascimento { get; set; }
+        public string Genero { get; set; }
         public bool Ativo { get; set; }
-        public bool Excuido { get; set; }
+        public bool Excluido { get; set; }
+        public virtual ICollection<Endereco> Enderecos { get; set; }
     }
 }

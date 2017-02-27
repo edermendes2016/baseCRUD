@@ -6,19 +6,22 @@ using System.Threading.Tasks;
 
 namespace appCRUD.Dominio.Modelos
 {
-    class Endereco
+    public class Endereco
     {
         public Endereco()
         {
-            Id = new Guid();
+            EnderecoId = new Guid();
+           
         }
 
-        public Guid Id { get; set; }
+        public Guid EnderecoId { get; set; }
         public string Cep { get; set; }
         public string Logradouro { get; set; }
         public int Numero { get; set; }
         public string Bairro { get; set; }
         public bool Ativo { get; set; }
         public bool Excluido { get; set; }
+        public Guid UsuarioId { get; set; }
+        public virtual Usuario Usuario { get; set; }
     }
 }
