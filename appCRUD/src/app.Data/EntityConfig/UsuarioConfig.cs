@@ -9,7 +9,10 @@ namespace app.Data.EntityConfig
     {
         public UsuarioConfig()
         {
-            HasKey(c => c.UsuarioId);
+            HasKey(c => c.Id);
+            Property(c => c.Id)
+                .HasColumnName("UsuarioId");
+
             Property(c => c.Nome)
                 .IsRequired()
                 .HasMaxLength(150);

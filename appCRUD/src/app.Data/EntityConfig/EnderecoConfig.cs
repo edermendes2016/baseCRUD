@@ -7,7 +7,9 @@ namespace app.Data.EntityConfig
     {
         public EnderecoConfig()
         {
-            HasKey(e => e.EnderecoId);
+            HasKey(e => e.Id);
+            Property(c => c.Id)
+                .HasColumnName("EnderecoId");
 
             Property(e => e.Logradouro)
                 .IsRequired()
